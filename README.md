@@ -45,7 +45,7 @@ When prompted, provide AWS access key id and secret access key and choose a defa
 `Default region name [us-east-1]: `  
 `Default output format [json]: `  
 
-On a Windows machine, create a shortcut that links to the `install.bat` batch file. Just go into properties for the shortcut and select advanced, then "run as administrator".
+On a Windows machine, create a shortcut that links to the `install.bat` batch file. Just go into properties for the shortcut and select advanced, then "run as administrator" and run the shortcut.
 
 YOU´RE DONE! 
 
