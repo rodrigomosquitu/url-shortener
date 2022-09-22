@@ -7,3 +7,5 @@
 terraform/.terraform.lock.hcl
 CreateCampaign/package-lock.json
 install - Atalho.lnk
+zipados/createcampaign.zip
+zipados/getcampaign.zip

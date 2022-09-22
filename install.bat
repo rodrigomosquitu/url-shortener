@@ -1,4 +1,4 @@
-REM @echo off
+@echo off
 
 NET SESSION >nul 2>&1
 IF %ERRORLEVEL% NEQ 0 (
@@ -6,9 +6,6 @@ IF %ERRORLEVEL% NEQ 0 (
 	pause
 	exit
 )
-
-REM set NODE_EXEC=node-v0.8.11-x86.msi
-REM set SETUP_DIR=%CD%
 
 set NODE_VER=null
 node -v >tmp.txt
@@ -44,8 +41,9 @@ echo ---------------------------------------------------
 
 cd %CUR_DIR%\terraform
 call terraform init
+call terraform apply -auto-approve
 
-echo DONE!
+echo ------------ ALL ABOARD !!!
 pause
 
 

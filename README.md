@@ -30,10 +30,9 @@ Update following variable from file /terraform/variables.tf:
 
 To run URL Shortener on AWS you will need:
 
-- The [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started) (1.2.0+) installed.
-- The [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed.
-
-PS: We are considering the AWS Lambda (NodeJS apps) GetCampaign and CreateCampaign were built with NPM, zipped and put it on the "zipados" root project folder.
+- [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started) (1.2.0+) installed.
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed.
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
 
 Now lets configure your AWS account and associated credentials that allow you to create resources, running the below command:
 
@@ -41,27 +40,20 @@ Now lets configure your AWS account and associated credentials that allow you to
 
 When prompted, provide AWS access key id and secret access key and choose a default region and output format:
 
-`AWS Access Key ID [****************2345]: ....`
+`AWS Access Key ID [****************2345]: ....`  
+`AWS Secret Access Key [****************2345]: ...`  
+`Default region name [us-east-1]: `  
+`Default output format [json]: `  
 
-`AWS Secret Access Key [****************2345]: ...`
+On a Windows machine, create a shortcut that links to the `install.bat` batch file. Just go into properties for the shortcut and select advanced, then "run as administrator".
 
-`Default region name [us-east-1]: `
-
-`Default output format [json]: `
-
-You need to initialize the directory with terraform init. Inside /terraform directory run:
-
-`$ terraform init`
-
-Apply the configuration now with the terraform apply command. 
-
-`$ terraform apply`
+YOU´RE DONE! 
 
 ---
 
 ## Troubleshooting
 
-You can face one or both following errors:
+You could face one or both following errors:
 
 > Error: Error creating API Gateway Integration Response: BadRequestException: Invalid mapping expression specified: Validation Result: warnings : [], errors : [No method response exists for method.]
 
