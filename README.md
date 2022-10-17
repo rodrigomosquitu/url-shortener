@@ -10,7 +10,7 @@ When a user browses to a minified URL, it should redirect to the original URL.
 
 ## Architecture design
 
-![](https://nord-cloud-penguin.s3.amazonaws.com/Architecture+URL+Shortener.png)
+![](https://nord-cloud-penguin.s3.us-east-1.amazonaws.com/Architecture%20URL%20Shortener.png)
 
 ## Domain Model
 
